@@ -7,21 +7,21 @@ import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.examen.carlosgs.R
-import com.examen.carlosgs.databinding.FragmentMovieDetailDialogDialogBinding
+import com.examen.carlosgs.databinding.FragmentMovieDetailDialogBinding
 import com.examen.carlosgs.data.model.MovieModel
 
 const val ARG_ITEM_MOVIE = "item_movie"
 
 class MovieDetailDialogFragment : BottomSheetDialogFragment() {
 
-    private var _binding: FragmentMovieDetailDialogDialogBinding? = null
+    private var _binding: FragmentMovieDetailDialogBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentMovieDetailDialogDialogBinding.inflate(inflater, container, false)
+        _binding = FragmentMovieDetailDialogBinding.inflate(inflater, container, false)
         return binding.root
     }
 

@@ -5,17 +5,16 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/nav_movies"
             android:icon="@drawable/ic_baseline_movie_24"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_locations"
             android:icon="@drawable/ic_baseline_location_on_24"
             android:title="@string/menu_gps" />
         <item
-            android:visible="false"
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_upload_files"
+            android:icon="@drawable/ic_baseline_photo_album_24"
+            android:title="@string/menu_upload" />
     </group>
 </menu>

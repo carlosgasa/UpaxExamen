@@ -9,7 +9,7 @@
 
     <string name="menu_home">Películas populares</string>
     <string name="menu_gps">Historial de ubicaciones</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_upload">Upload files</string>
     <string name="txt_no_title">Sin nombre :(</string>
     <string name="txt_no_permission">Sin permiso :(</string>
     <string name="txt_no_overview">Sin nombre :(</string>
@@ -21,4 +21,6 @@
     <string name="api_key_movies">12142b99418780796047ff5e05dfb096</string>
     <string name="base_url_movies">https://api.themoviedb.org/3/</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
