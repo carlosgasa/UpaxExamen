@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "746919185842",
+    "project_id": "upaxtest-3977b",
+    "storage_bucket": "upaxtest-3977b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746919185842:android:c984573498772b4dd0a8ab",
+        "android_client_info": {
+          "package_name": "com.examen.carlosgs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746919185842-eha19bbdh9u2u9u673r9t8quogd51jp2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.examen.carlosgs",
+            "certificate_hash": "a6fcfc75f4bb8ace77c42c018723647902dc7008"
+          }
+        },
+        {
+          "client_id": "746919185842-lgf13ekujq161kh9ddir0sdc80511q9l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbr2w__EnUyhYOWTzrzYSt0ogVAg8Cp2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746919185842-lgf13ekujq161kh9ddir0sdc80511q9l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

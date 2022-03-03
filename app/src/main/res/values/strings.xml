@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Examen Carlos G</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Películas populares</string>
+    <string name="menu_gps">Historial de ubicaciones</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="txt_no_title">Sin nombre :(</string>
+    <string name="txt_no_permission">Sin permiso :(</string>
+    <string name="txt_no_overview">Sin nombre :(</string>
+    <string name="title_movie_detail">Información</string>
+    <string name="action_watch_movie">Ver Película</string>
+    <string name="txt_error">Ha ocurrido un error de conexion</string>
+    <string name="txt_notification_description">Se guardara tu ubicacion cada 5 minutos</string>
+    <string name="api_key_gmaps">AIzaSyArQvVZr7AltNyoWbh37kwfoSconnDDuSQ</string>
+    <string name="api_key_movies">12142b99418780796047ff5e05dfb096</string>
+    <string name="base_url_movies">https://api.themoviedb.org/3/</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/between_medium">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvMovie"
+        android:layout_margin="@dimen/margin_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivPoster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_foreground"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_margin="@dimen/between_small"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Titulo de pelicula"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/gray_transparent"
+            android:id="@+id/tvAverage"
+            android:layout_margin="@dimen/between_medium"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            tools:text="9/10"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
