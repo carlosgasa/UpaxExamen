@@ -21,6 +21,7 @@ import androidx.core.content.ContextCompat
 import com.examen.carlosgs.R
 import com.examen.carlosgs.databinding.ActivityMainBinding
 import com.examen.carlosgs.services.GPSService
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class MainActivity : AppCompatActivity() {
 
@@ -49,13 +50,29 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
+
+        initServiceGPS()
+
+
+
+    }
+
+    private fun initServiceGPS() {
         //Checar permisos para inicializar el servicio de gps
         if(!checkPermission()){
-            requestPermissionLauncher.launch(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION))
+            MaterialAlertDialogBuilder(this)
+                .setTitle("Atencion")
+                .setMessage("Para poder usar la app debes dar permiso de ubicacion")
+                .setPositiveButton("Entendio") { _, _ ->
+                    requestPermissionLauncher.launch(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION))
+                }
+                .setNegativeButton("Cancelar") { _, _ ->
+                    Toast.makeText(this, "No se mostraran los lugares cercanos", Toast.LENGTH_SHORT).show()
+                }
+                .show()
         } else {
             startGPSService()
         }
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
