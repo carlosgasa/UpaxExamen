@@ -34,7 +34,7 @@
         android:id="@+id/tvEmptyData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No se cargaron las peliculas"
+        android:text="@string/txt_no_movies"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

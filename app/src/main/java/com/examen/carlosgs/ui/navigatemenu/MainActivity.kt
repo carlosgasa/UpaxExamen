@@ -61,13 +61,13 @@ class MainActivity : AppCompatActivity() {
         //Checar permisos para inicializar el servicio de gps
         if(!checkPermission()){
             MaterialAlertDialogBuilder(this)
-                .setTitle("Atencion")
-                .setMessage("Para poder usar la app debes dar permiso de ubicacion")
-                .setPositiveButton("Entendio") { _, _ ->
+                .setTitle(getString(R.string.txt_attention))
+                .setMessage(getString(R.string.txt_request_to_use))
+                .setPositiveButton(getString(R.string.txt_understand)) { _, _ ->
                     requestPermissionLauncher.launch(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION))
                 }
-                .setNegativeButton("Cancelar") { _, _ ->
-                    Toast.makeText(this, "No se mostraran los lugares cercanos", Toast.LENGTH_SHORT).show()
+                .setNegativeButton(getString(R.string.txt_cancel)) { _, _ ->
+                    Toast.makeText(this, R.string.txt_no_permission, Toast.LENGTH_SHORT).show()
                 }
                 .show()
         } else {

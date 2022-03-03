@@ -2,6 +2,7 @@ package com.examen.carlosgs.ui.upload
 
 import android.app.Activity
 import android.content.Intent
+import android.opengl.Visibility
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
@@ -47,10 +49,21 @@ class UploadFilesFragment : Fragment() {
     private fun initObservers() {
         uploadFilesViewModel.filesListData.observe(requireActivity()){
             mAdapter.setList(it)
+            if(it.isNotEmpty()){
+                binding.tvEmptyData.visibility = View.GONE
+            } else {
+                binding.tvEmptyData.visibility = View.VISIBLE
+            }
         }
 
         uploadFilesViewModel.loading.observe(requireActivity()){
             binding.pbLoading.visibility = if(it) View.VISIBLE else View.INVISIBLE
+        }
+
+        uploadFilesViewModel.errorData.observe(requireActivity()){
+            if(it){
+                Toast.makeText(requireActivity(), getString(R.string.txt_error_uploading), Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
